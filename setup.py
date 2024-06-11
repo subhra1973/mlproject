@@ -1,18 +1,18 @@
 # write setup.py for packaging the project
-from setuptools import setup, find_packages
+from setuptools import setup, find_packages # type: ignore
 from typing import List
 HYPHEN_E_DOT='-e .'
 
 # create funcation get_requirments for install requirments.txt take is as str and list 
 def get_requirements(file_path:str) -> List[str]:
-    requiremnets=[]
+    requirements=[]
     with open(file_path) as f:
-        requiremnets=f.readlines()  
-        requiremnets=[req.replace("\n","") for req in requiremnets]
+        requirements=f.readlines()  
+        requirements=[req.replace("\n","") for req in requirements]
         
-        if HYPHEN_E_DOT in requiremnets:
-            requiremnets.remove(HYPHEN_E_DOT)
-    return requiremnets
+        if HYPHEN_E_DOT in requirements:
+            requirements.remove(HYPHEN_E_DOT)
+    return requirements
 
 ## create setup params  for my mlproject   and take lib details from requirments.txt   
 setup(
