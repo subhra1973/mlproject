@@ -22,7 +22,7 @@ setup(
     author='Subhra',
     author_email='subhra1973@gmail.com',
     description='A machine learning project',
-    install_requires=get_requirements('requirments.txt')
+    install_requires=get_requirements('requirements.txt')
     # add more metadata as needed
     )
 
