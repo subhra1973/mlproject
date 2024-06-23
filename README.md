@@ -8,3 +8,10 @@ conda create -p venv python==3.8 -y
 (base) C:\project\mlproject>conda activate venv/
 
 (C:\project\mlproject\venv) C:\project\mlproject>
+
+## git 
+ git status
+git add .
+git commit -m "looging and exception"
+git push -u origin main
+
